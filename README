@@ -1,0 +1,5 @@
+Music viewer (NIF format) in C#.
+Port of niffty java project. Original java project is available at http://niffty.sourceforge.net/.
+The main library (org.niffty) is portable, so you may have to install portable library 
+http://visualstudiogallery.msdn.microsoft.com/b0e0b5e9-e138-410b-ad10-00cb3caf4981/
+in order to open it in Visual Studio.

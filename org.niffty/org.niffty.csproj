@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3F4C2DDD-C736-4B56-925B-4175D57DE294}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>org.niffty</RootNamespace>
+    <AssemblyName>org.niffty</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile2</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .NET Framework is automatically included -->
+    <Compile Include="Accidental.cs" />
+    <Compile Include="Anchored.cs" />
+    <Compile Include="ArticulationDirection.cs" />
+    <Compile Include="AugmentationDot.cs" />
+    <Compile Include="Barline.cs" />
+    <Compile Include="Beam.cs" />
+    <Compile Include="Clef.cs" />
+    <Compile Include="DrawShape.cs" />
+    <Compile Include="FannedBeam.cs" />
+    <Compile Include="FinalPoint.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChunkLengthTable.cs" />
+    <Compile Include="HeirarchyException.cs" />
+    <Compile Include="HeirarchyNode.cs" />
+    <Compile Include="IGraphics.cs" />
+    <Compile Include="IntRatio.cs" />
+    <Compile Include="KeySignature.cs" />
+    <Compile Include="LineQuality.cs" />
+    <Compile Include="LogicalPlacement.cs" />
+    <Compile Include="Lyric.cs" />
+    <Compile Include="MeasureStartTimeSlice.cs" />
+    <Compile Include="MidiPerformance.cs" />
+    <Compile Include="MusicSymbol.cs" />
+    <Compile Include="NiffInfo.cs" />
+    <Compile Include="Notehead.cs" />
+    <Compile Include="Ossia.cs" />
+    <Compile Include="Page.cs" />
+    <Compile Include="PageHeader.cs" />
+    <Compile Include="PartDescriptionOverride.cs" />
+    <Compile Include="PartsList.cs" />
+    <Compile Include="Placement.cs" />
+    <Compile Include="Point.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rational.cs" />
+    <Compile Include="ReferencePointOverride.cs" />
+    <Compile Include="Rest.cs" />
+    <Compile Include="Riff.cs" />
+    <Compile Include="RiffAccidental.cs" />
+    <Compile Include="RiffAugmentationDot.cs" />
+    <Compile Include="RiffBarline.cs" />
+    <Compile Include="RiffBeam.cs" />
+    <Compile Include="RiffChunkLengthTable.cs" />
+    <Compile Include="RiffClef.cs" />
+    <Compile Include="RiffFormatException.cs" />
+    <Compile Include="RiffForNiff.cs" />
+    <Compile Include="RiffKeySignature.cs" />
+    <Compile Include="RiffLyric.cs" />
+    <Compile Include="RiffMeasureStartTimeSlice.cs" />
+    <Compile Include="RiffNiffInfo.cs" />
+    <Compile Include="RiffNotehead.cs" />
+    <Compile Include="RiffPage.cs" />
+    <Compile Include="RiffPageHeader.cs" />
+    <Compile Include="RiffPartsList.cs" />
+    <Compile Include="RiffRest.cs" />
+    <Compile Include="RiffScore.cs" />
+    <Compile Include="RiffScoreData.cs" />
+    <Compile Include="RiffScoreSetup.cs" />
+    <Compile Include="RiffStaff.cs" />
+    <Compile Include="RiffStaffHeader.cs" />
+    <Compile Include="RiffStaffSystem.cs" />
+    <Compile Include="RiffStaffSystemHeader.cs" />
+    <Compile Include="RiffStem.cs" />
+    <Compile Include="RiffStringTable.cs" />
+    <Compile Include="RiffTags.cs" />
+    <Compile Include="RiffTie.cs" />
+    <Compile Include="RiffTimeSignature.cs" />
+    <Compile Include="RiffTimeSlice.cs" />
+    <Compile Include="Score.cs" />
+    <Compile Include="ScoreData.cs" />
+    <Compile Include="ScoreSetup.cs" />
+    <Compile Include="Staff.cs" />
+    <Compile Include="StaffHeader.cs" />
+    <Compile Include="StaffSystem.cs" />
+    <Compile Include="StaffSystemHeader.cs" />
+    <Compile Include="Stem.cs" />
+    <Compile Include="SymbolPositioner.cs" />
+    <Compile Include="Tags.cs" />
+    <Compile Include="Tie.cs" />
+    <Compile Include="TieDirection.cs" />
+    <Compile Include="TimeSignature.cs" />
+    <Compile Include="TimeSlice.cs" />
+    <Compile Include="TupletDescription.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
